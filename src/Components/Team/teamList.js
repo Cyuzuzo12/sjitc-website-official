@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {firebaseLeaders,fireBaseLooper} from "./../../firebase";
+import {firebase,firebaseLeaders,fireBaseLooper} from "./../../firebase";
 import TeamTemplates from './teamTemplate';
 
 class TeamList extends Component {
@@ -10,9 +10,25 @@ class TeamList extends Component {
          firebaseLeaders.once('value')
          .then((snapshot)=>{
             const leaders = fireBaseLooper(snapshot);
-             this.setState({
-                 leaders
-             })
+            const asyncFunction = (item,i,cb) =>{
+                firebase.storage().ref('images')
+                .child(item.image).getDownloadURL()
+                .then(url => {
+                    leaders[i].image = url;
+                    cb();
+                })
+            }
+            let requests = leaders.map((item,i) =>{
+                return new Promise((resolve)=> {
+                    asyncFunction(item,i, resolve)
+                })
+            })
+
+            Promise.all(requests).then(()=>{
+                this.setState({
+                    leaders
+                })
+            })
          })
          
      }

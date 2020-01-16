@@ -8,7 +8,7 @@ const TeamTemplates = (props) => {
         <div key={leader.id} className="col-12 m-1"> 
         <Media tag="li" >
         <Media left middle>
-       <Media object src={require(`../../images/leaders/${leader.image}`)} alt={leader.designation} height="110"
+       <Media object src={leader.image} alt={leader.designation} height="110"
                            width="120"/>
                 </Media>
                 <Media body className="ml-5">

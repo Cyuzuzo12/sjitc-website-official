@@ -1,5 +1,6 @@
 div, h2, h3, h4, h5, h6, p ,section {
-  font-family: courier;
+  /* font-family: 'Gayathri', sans-serif; */
+  font-family: 'Courier Prime', monospace;
 }
 .footer-frame {
   min-height: 7px;
@@ -19,7 +20,8 @@ div, h2, h3, h4, h5, h6, p ,section {
 .carousel-caption{
   background-color: rgb(3, 3, 3);
   opacity: 0.7;
-  /* font-size: 7px; */
+  font-size: 1px;
+  font-family: 'Courier Prime', monospace;
 }
 .dropdown-menu {
   position: relative;
