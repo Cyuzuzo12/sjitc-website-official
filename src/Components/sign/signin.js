@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {firebase,googleAuth} from "../../firebase";
+import {firebase} from "../../firebase";
 import {withRouter} from "react-router-dom";
 import styles from './signin.css';
 import FormField from './formField';
@@ -121,20 +121,21 @@ class SignIn extends Component {
                         })
                     })
 
-                } else {
-                    firebase.auth()
-                    .createUserWithEmailAndPassword(
-                        dataToSubmit.email,
-                        dataToSubmit.password
-                    ).then(()=>{
-                        this.props.history.push('/home')
-                    }).catch( error =>{
-                        this.setState({
-                            loading:false,
-                            registerError: error.message
-                        })
-                    })
-                }
+                } 
+                // else {
+                //     firebase.auth()
+                //     .createUserWithEmailAndPassword(
+                //         dataToSubmit.email,
+                //         dataToSubmit.password
+                //     ).then(()=>{
+                //         this.props.history.push('/home')
+                //     }).catch( error =>{
+                //         this.setState({
+                //             loading:false,
+                //             registerError: error.message
+                //         })
+                //     })
+                // }
             }
         }
 
@@ -147,7 +148,7 @@ class SignIn extends Component {
             'loading...'
         :
         <div>
-            <button onClick={(event)=>this.submitForm(event,false)}> Register now</button>
+            {/* <button onClick={(event)=>this.submitForm(event,false)}> Register now</button> */}
             <button onClick={(event)=>this.submitForm(event,true)}> Log in </button>
         </div>
     )

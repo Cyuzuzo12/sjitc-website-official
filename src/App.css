@@ -89,12 +89,12 @@ div, h2, h3, h4, h5, h6, p ,section {
   min-height: 480px;
   max-height: 2800px;
 }
-.login-image {
+/* .login-image {
   background-image: url("./images/secondary.jpg");
   background-color: #f3f0e8;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 .home {
   background-repeat: no-repeat;
   background-size: cover;

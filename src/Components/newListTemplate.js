@@ -7,10 +7,9 @@ const NewsListTemplate = (props) => {
       return (
         
      
-    <div className="articleBody">
+    <div className="articleBody"  key={item.id}>
         
        <div>
-       <p>
       <h1>
           {item.title}
       </h1>
@@ -18,7 +17,6 @@ const NewsListTemplate = (props) => {
           <i className="fa fa-clock-o"/>
           {item.date}
       </span> */}
-       </p>
        
        </div>
         <div className="articleText"

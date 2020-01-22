@@ -19,35 +19,47 @@ import SignIn from './sign/signin';
 
 AOS.init();
 
-// const PrivateRoute =({isLogged,component:Comp,...rest})=>{
-// return(<Route {...rest} component={(props)=>(
-//   isLogged ?
-//   <Comp {...props}/>
-//   :
-//   <Redirect to="/sign-in" />
-// )}
+const PrivateRoute =({user,component:Comp,...rest})=>{
+return(<Route {...rest} component={(props)=>(
+  user ?
+  <Comp {...props} user={user}/>
+  :
+  <Redirect to="/sign-in" />
+)}
 
-// />)
-// }
+/>)
+}
+const PublicRoute=({user,component:Comp,...rest})=>{
+    return( <Route {...rest} component={(props)=>(
+        rest.restricted ? 
+            ( user ? 
+                <Redirect to="/dashboard"/>
+                : 
+                <Comp {...props} user={user}/>
+            )
+        :
+         <Comp {...props} user={user}/>
+    )}/> )
+    }
 const MainPage =(props)=>{
   console.log(props)
         return ( 
 <React.Fragment>
-<Header user={props.user}/>
+<Header {...props}/>
 <Switch>
-    <Route path='/home' component={() =><Home/>}/>
-    <Route path='/sign-in' component={() =><SignIn/>}/>
+    <PublicRoute {...props} restricted={false} path='/home' component={() =><Home/>}/>
+    <PublicRoute {...props} restricted={true} path='/sign-in' component={() =><SignIn/>}/>
     {/* <Route path='/sin-up' component={() =><SinUp/>}/>  */}
-    <Route path="/advenced-level" component={()=> <AdvencedLevel/>}/>
-    <Route path="/advenced-diploma" component={()=> <Diploma/>}/>
-    <Route path="/admission-for-advenced-level" component={()=> <AdmissionAdvancedLevel/>}/>
-    <Route path="/admission-for-advenced-diploma" component={()=> <AdmissionAdvancedDiploma/>}/>
-    <Route path="/mission-vision" component={()=><MissionVision />}/>
-    <Route path="/administration" component={()=><Team/>}/>
-    <Route path="/history" component={()=> <History/>}/>
-    <Route path="/dashboard" component={()=> <Dashboard/>}/>
-    {/* <PrivateRoute isLogged={props.auth} path="/dashboard" component={()=> <Dashboard/>}/> */}
-    <Redirect to='/home'/>
+    <PublicRoute {...props} restricted={false} path="/advenced-level" component={()=> <AdvencedLevel/>}/>
+    <PublicRoute {...props} restricted={false} path="/advenced-diploma" component={()=> <Diploma/>}/>
+    <PublicRoute {...props} restricted={false} path="/admission-for-advenced-level" component={()=> <AdmissionAdvancedLevel/>}/>
+    <PublicRoute {...props} restricted={false} path="/admission-for-advenced-diploma" component={()=> <AdmissionAdvancedDiploma/>}/>
+    <PublicRoute {...props} restricted={false} path="/mission-vision" component={()=><MissionVision />}/>
+    <PublicRoute {...props} restricted={false} path="/administration" component={()=><Team/>}/>
+    <PublicRoute {...props} restricted={false} path="/history" component={()=> <History/>}/>
+    <PublicRoute {...props} restricted={false} path="/dashboard" component={()=> <Dashboard/>}/>
+    <PrivateRoute {...props} path="/dashboard" component={()=> <Dashboard/>}/>
+  
     
 </Switch>
 <Footer/>

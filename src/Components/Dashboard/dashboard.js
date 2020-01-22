@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import FormField from '../sign/formField';
 import {Editor} from 'react-draft-wysiwyg';
 import{firebase,firebaseNews} from "../../firebase";
-import{EditorState,convertFromRaw,convertToRaw} from 'draft-js';
+import{EditorState} from 'draft-js';
 import { stateToHTML } from 'draft-js-export-html';
 import Uploader from './fileUploader';
 import "./dashboard.css";
@@ -29,6 +29,7 @@ class Dashboard extends Component {
             },
             body:{
                 element:'texteditor',
+                placeholder:'Type here...',
                 value:'',
                 valid:true
             },
@@ -157,7 +158,10 @@ class Dashboard extends Component {
     } 
     render() { 
         return ( <section>
-            <div className="postContainer">
+            <div className="container">
+<div className="row">
+    <div className="col m-4">
+    <div className="postContainer">
             <form onSubmit={this.submitForm}>
                 <h2>Add News</h2>
                 <FormField
@@ -180,6 +184,10 @@ class Dashboard extends Component {
                     {this.showError()}
             </form>
         </div>
+        
+    </div>
+</div>
+            </div>
         </section> );
     }
 }

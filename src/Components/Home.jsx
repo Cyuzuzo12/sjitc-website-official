@@ -97,16 +97,7 @@ const Home = () => {
                     </li>
                   </ul>
                 </div>
-                {/* <div className="col-md-4 m-1 ">
-                  <div className="row">
-                    <div className="col bg-white">
-                      <h4 className="font purple font-weight-bold">
-                        LATEST NEWS
-                      </h4>
-                      <NewsList/>
-                    </div>
-                  </div>
-                </div> */}
+               
               </div>
             </div>
           </div>

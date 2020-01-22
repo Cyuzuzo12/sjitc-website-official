@@ -30,12 +30,13 @@ const SliderTemplates = (props) => {
         <CarouselItem
           onExiting={() => setAnimating(true)}
           onExited={() => setAnimating(false)}
-          key={item.key}
+          key={item.id}
           className="corousel-image"
         >
           <img src={item.image} alt={item.title}  />
          
           <CarouselCaption
+          captionText=""
             captionHeader={item.title}
             className="carousel-caption"
           />

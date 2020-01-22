@@ -54,62 +54,31 @@ const AdmissionAdvancedDiploma = () => {
                       Advanced Diploma & Diploma Requirements
                       </h5>
                       <li className="font text-muted">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium
+                      Notified copy of "A" Level certificate or any other certificate deemed equivalent
                       </li>
                       <li className="font text-muted">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium
+                      3 Passport size photos in color
                       </li>
                       <li className="font text-muted">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitae dicta
+                      A photocopy of the National ID Card or valid Passport
                       </li>
                       <li className="font text-muted">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium
-                      </li>
-                      <li className="font text-muted">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium
-                      </li>
-                      <li className="font text-muted">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitae dicta
-                      </li>
-                      <li className="font text-muted">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium
-                      </li>
-                      <li className="font text-muted">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitae dicta
-                      </li>
-                      <li className="font text-muted">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitae dicta
-                      </li>
-                      <li className="font text-muted">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium
-                      </li>
-                      <li className="font text-muted">
-                      Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitae dicta
-                      </li>
+                     Atleast to have grade <strong>E</strong> and above in two principal subjects, in Technical schools must have 16 point atleast or schools of Sciences must have 18 points atleast.
+                     </li>
+                     <li className="font text-muted">
+                     Secondary school transcripts/reports for senior<strong> 4,5</strong>and <strong>6</strong>
+                     </li>
+                     <li className="font text-muted">
+                     A non-refundable application fee of Frws 44,000 paid in any of the following bank accounts:
+                     <ol>
+                       <li>Bank of Kigali: 00040–0315351-37 (FRWS)</li>
+                       <li>Access Bank: 1002190104361301 (FRWS)</li>
+                     </ol>
+                     </li>
                     </ol>
                   </div>
               </div>
+            
             </div>
             {/* <div className="col-md-2 m-2 col-sm-12 ">
               <div className="row">

@@ -16,7 +16,6 @@ const firebaseConfig = {
  const firebaseDB = firebase.database();
  const firebaseNews =firebaseDB.ref('news');
  const firebaseLeaders =firebaseDB.ref('leaders');
- const googleAuth =new firebase.auth.GoogleAuthProvider();
 
  const fireBaseLooper =(snapshot)=>{
     const data = [];
@@ -32,7 +31,6 @@ const firebaseConfig = {
 
  export{
      firebaseDB,
-     googleAuth,
      firebase,
      firebaseLeaders,
      firebaseNews,
