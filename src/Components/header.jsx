@@ -46,9 +46,9 @@ class Header extends Component {
       dropdownOpen: !this.state.dropdownOpen
     });
   };
-  onMouseEnter = () => {
-    this.setState({ dropdownOpen: true });
-  };
+  // onMouseEnter = () => {
+  //   this.setState({ dropdownOpen: true });
+  // };
 
   // onMouseLeave =()=> {
   //   this.setState({dropdownOpen: false});
@@ -58,9 +58,9 @@ class Header extends Component {
       dropdownOpen1: !this.state.dropdownOpen1
     });
   };
-  onMouseEnter1 = () => {
-    this.setState({ dropdownOpen1: true });
-  };
+  // onMouseEnter1 = () => {
+  //   this.setState({ dropdownOpen1: true });
+  // };
 
   // onMouseLeave1 =()=> {
   //   this.setState({dropdownOpen1: false});
@@ -71,9 +71,9 @@ class Header extends Component {
       dropdownOpen2: !this.state.dropdownOpen2
     });
   };
-  onMouseEnter2 = () => {
-    this.setState({ dropdownOpen2: true });
-  };
+  // onMouseEnter2 = () => {
+  //   this.setState({ dropdownOpen2: true });
+  // };
 
   // onMouseLeave2 =()=> {
   //   this.setState({dropdownOpen2: false});
@@ -162,12 +162,12 @@ class Header extends Component {
                   inNavbar
                   isOpen={this.state.dropdownOpen1}
                   toggle={this.toggle1}
-                  onMouseEnter={this.onMouseEnter1}
-                  onMouseLeave={this.onMouseLeave1}
+                  // onMouseEnter={this.onMouseEnter1}
+                  // onMouseLeave={this.onMouseLeave1}
                 >
                   <DropdownToggle
                     className="font-weight-bold menu text-white "
-                    nav
+                    nav caret
                   >
                     <i className="fa fa-info-circle" />
                     ABOUT
@@ -199,12 +199,12 @@ class Header extends Component {
                   inNavbar
                   isOpen={this.state.dropdownOpen}
                   toggle={this.toggle}
-                  onMouseEnter={this.onMouseEnter}
-                  onMouseLeave={this.onMouseLeave}
+                  // onMouseEnter={this.onMouseEnter}
+                  // onMouseLeave={this.onMouseLeave}
                 >
                   <DropdownToggle
                     className="font-weight-bold menu text-white "
-                    nav
+                    nav caret
                   >
                     <i className="fa fa-graduation-cap" />
                     ACADEMICS
@@ -222,12 +222,12 @@ class Header extends Component {
                         Advanced Diploma & Diploma
                       </Link>
                     </DropdownItem>
-                    <DropdownItem divider />
+                    {/* <DropdownItem divider />
                     <DropdownItem className="text-white bg-dark ">
                       <Link to="/" className="text-white font">
                         Short Courses
                       </Link>
-                    </DropdownItem>
+                    </DropdownItem> */}
                   </DropdownMenu>
                 </Dropdown>
                 <Dropdown
@@ -235,12 +235,12 @@ class Header extends Component {
                   inNavbar
                   isOpen={this.state.dropdownOpen2}
                   toggle={this.toggle2}
-                  onMouseEnter={this.onMouseEnter2}
-                  onMouseLeave={this.onMouseLeave2}
+                  // onMouseEnter={this.onMouseEnter2}
+                  // onMouseLeave={this.onMouseLeave2}
                 >
                   <DropdownToggle
                     className="font-weight-bold menu text-white "
-                    nav
+                    nav caret
                   >
                     ADMISSION
                   </DropdownToggle>
@@ -263,18 +263,18 @@ class Header extends Component {
                         Advanced Diploma & Diploma
                       </Link>
                     </DropdownItem>
-                    <DropdownItem divider />
+                    {/* <DropdownItem divider />
                     <DropdownItem className="text-white bg-dark ">
                       <Link to="/" className="text-white font">
                         Short Courses
                       </Link>
-                    </DropdownItem>
+                    </DropdownItem> */}
                   </DropdownMenu>
                 </Dropdown>
                 <NavItem>
                   <NavLink
                     className="nav-link menu  font-weight-bold text-white"
-                    to="/"
+                    to="/contact-us"
                   >
                     <i className="fa fa-phone"></i>CONTACT US
                   </NavLink>

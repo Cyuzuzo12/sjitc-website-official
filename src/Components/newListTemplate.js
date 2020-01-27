@@ -13,10 +13,10 @@ const NewsListTemplate = (props) => {
       <h1>
           {item.title}
       </h1>
-      {/* <span className="date">
+      <span className="date">
           <i className="fa fa-clock-o"/>
           {item.date}
-      </span> */}
+      </span>
        
        </div>
         <div className="articleText"
@@ -32,7 +32,10 @@ const NewsListTemplate = (props) => {
 
     return(
        <div>
+           
+           <marquee direction="up" scrollamount="4" style={{height:'280px'}}>
            {news}
+           </marquee>
        </div>
         
     )

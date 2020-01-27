@@ -8,7 +8,7 @@ const Home = () => {
       <section className="home">
         <div className="container ">
           <div className="row p-3">
-            <div className="col-md-3 col-sm-12 m-2 ">
+            <div className="col-md-3 col-sm-12 ">
               <div className="row">
                 <div className="col reg-program ">
                   <h6 className="font m-4">ADVANCED DIPLOMA & DIPLOMA</h6>
@@ -28,7 +28,7 @@ const Home = () => {
                   <h6 className="font">ADVANCED LEVEL 3,4,5</h6>
                   <ul className="font">
                     <li className="font">Computer Application</li>
-                    <li className="font">Masonry</li>
+                    <li className="font">Masonery</li>
                     <li className="font">Surveying</li>
                     <li className="font">Road Contruction</li>
                   </ul>
@@ -47,7 +47,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-8 col-sm-12 m-2 ">
+            <div className="col-md-9 col-sm-12 ">
               <div className="row">
                 <div className="col-md-12 m-2">
                   <NewsSlider

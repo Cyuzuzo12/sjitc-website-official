@@ -12,7 +12,7 @@ const AdmissionAdvancedDiploma = () => {
                    <div className="col reg-program ">
                    <h6 className="font m-4">ADVANCED DIPLOMA & DIPLOMA</h6>
                 <ul className="font">
-                  <span className="font font-weight-bold">Cival Engineering</span>
+                  <span className="font font-weight-bold">Civil Engineering</span>
                   <li className="font">High Way</li>
                   <li className="font">Land Surveying</li>
                   <li className="font">Building Contruction</li>
@@ -25,7 +25,7 @@ const AdmissionAdvancedDiploma = () => {
                 <h6 className="font">ADVANCED LEVEL 3,4,5</h6>
                 <ul className="font">
                   <li className="font">Computer Application</li>
-                  <li className="font">Masonry</li>
+                  <li className="font">Masonery</li>
                   <li className="font">Surveying</li>
                   <li className="font">Road Contruction</li>
                 </ul>
@@ -45,7 +45,7 @@ const AdmissionAdvancedDiploma = () => {
                   </div>
                </div>
               </div>
-            <div className="col-md-8 col-sm-12  m-2">
+            <div className="col-md-7 col-sm-12  m-2">
               <div className="row">
                   <div className="col bg-white">
                   <ol data-aos="fade-up"

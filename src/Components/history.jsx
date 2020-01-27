@@ -10,9 +10,9 @@ const History = () => {
             <div className="col-md-3 col-sm-12 m-2">
             <div className="row">
                    <div className="col reg-program ">
-                   <h6 className="font m-4">ADVENCED DIPLOMA & DIPLOMA</h6>
+                   <h6 className="font m-4">ADVANCED DIPLOMA & DIPLOMA</h6>
                 <ul className="font">
-                  <span className="font font-weight-bold">Cival Engineering</span>
+                  <span className="font font-weight-bold">Civil Engineering</span>
                   <li className="font">High Way</li>
                   <li className="font">Land Surveying</li>
                   <li className="font">Building Contruction</li>
@@ -22,10 +22,10 @@ const History = () => {
                     Information Technology
                   </span>
                 </ul>
-                <h6 className="font">ADVENCED LEVEL 3,4,5</h6>
+                <h6 className="font">ADVANCED LEVEL 3,4,5</h6>
                 <ul className="font">
                   <li className="font">Computer Application</li>
-                  <li className="font">Masonry</li>
+                  <li className="font">Masonery</li>
                   <li className="font">Surveying</li>
                   <li className="font">Road Contruction</li>
                 </ul>

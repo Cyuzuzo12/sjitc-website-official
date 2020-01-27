@@ -13,7 +13,7 @@ const App= (props) =>{
         <BrowserRouter>
       <div >
         <MainPage {...props}/>
-      </div>)
+      </div>
      </BrowserRouter>
          );
   

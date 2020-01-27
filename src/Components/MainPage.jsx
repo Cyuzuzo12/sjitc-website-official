@@ -9,13 +9,12 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import MissionVision from './missionVision';
 import Team from './Team/team';
-// import SinUp from './SinUp';
 import Diploma from './Academics/advancedDiploma';
-// import ShortCourse from './shortCourse';
 import Dashboard from './Dashboard/dashboard';
 import AdmissionAdvancedLevel from './Admission/AdvancedLevel';
 import AdmissionAdvancedDiploma from './Admission/Diploma';
 import SignIn from './sign/signin';
+import ContactComponent from './ContactComponent';
 
 AOS.init();
 
@@ -49,7 +48,7 @@ const MainPage =(props)=>{
 <Switch>
     <PublicRoute {...props} restricted={false} path='/home' component={() =><Home/>}/>
     <PublicRoute {...props} restricted={true} path='/sign-in' component={() =><SignIn/>}/>
-    {/* <Route path='/sin-up' component={() =><SinUp/>}/>  */}
+    <Route path='/contact-us' component={() =><ContactComponent/>}/> 
     <PublicRoute {...props} restricted={false} path="/advenced-level" component={()=> <AdvencedLevel/>}/>
     <PublicRoute {...props} restricted={false} path="/advenced-diploma" component={()=> <Diploma/>}/>
     <PublicRoute {...props} restricted={false} path="/admission-for-advenced-level" component={()=> <AdmissionAdvancedLevel/>}/>

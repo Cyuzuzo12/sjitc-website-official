@@ -27,6 +27,21 @@ class Dashboard extends Component {
                 touched:false,
                 validationMessage:''
             },
+            date:{
+                element:'input',
+                value:'',
+                config:{
+                    name:'date_input',
+                    type:'date',
+                    placeholder:'dd/mm/yyyy'
+                },
+                validation:{
+                    required:true
+                },
+                valid:false,
+                touched:false,
+                validationMessage:''
+            },
             body:{
                 element:'texteditor',
                 placeholder:'Type here...',
@@ -38,7 +53,7 @@ class Dashboard extends Component {
                 value:'',
                 valid:true
             }
-        }
+    }
 
      }
      updateForm = (element,content='') => {
@@ -107,7 +122,7 @@ class Dashboard extends Component {
                     newsId = childSnapshot.val().id;
                 });
 
-                dataToSubmit['date'] = firebase.database.ServerValue.TIMESTAMP
+                // dataToSubmit['date'] = firebase.database.ServerValue.TIMESTAMP
                 dataToSubmit['id'] = newsId + 1;
 
                 firebaseNews.push(dataToSubmit)
@@ -128,9 +143,9 @@ class Dashboard extends Component {
             }
        
     submitButton = () => (
-        this.state.loading ? 
-            'loading...'
-        :
+        // this.state.loading ? 
+        //     'loading...'
+        // :
         <div>
            
             <button type="submit"> add </button>
@@ -176,6 +191,11 @@ class Dashboard extends Component {
                     editorClassName="myEditor-editor"
                     onEditorStateChange={this.onEditorStateChange}
 
+                    />
+                     <FormField
+                        id={'date'}
+                        formdata={this.state.formdata.date}
+                        change={(element)=>this.updateForm(element)}
                     />
                     <Uploader
                     filename={ (filename)=> this.storeFilename(filename) }

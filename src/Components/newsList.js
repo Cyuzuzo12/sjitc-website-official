@@ -8,7 +8,7 @@ class NewsList extends Component {
         imageURL:''
      }
      componentWillMount(){
-         firebaseNews.limitToFirst(3).once('value')
+         firebaseNews.limitToLast(3).once('value')
          .then((snapshot)=>{
             const news = fireBaseLooper(snapshot);
              this.setState({
