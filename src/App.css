@@ -284,4 +284,9 @@ section {
   margin:15px 0;
 }
 
-
+div.scroll { 
+  height: 600px; 
+  overflow-x: hidden; 
+  overflow-x: auto; 
+  text-align:justify; 
+} 

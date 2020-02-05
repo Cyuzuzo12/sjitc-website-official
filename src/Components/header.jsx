@@ -282,12 +282,12 @@ class Header extends Component {
               </Nav>
               <Nav className="ml-auto " navbar>
                 <NavItem>
-                  <NavLink
+                  <a
                     className="nav-link font-weight-bold text-white sin"
-                    to="/home"
+                    href="http://localhost:3001/"
                   >
                     Apply Online
-                  </NavLink>
+                  </a>
                 </NavItem>
                 <NavItem style={{display:!this.state.logged ? 'block' : 'none'}}>
                   <NavLink

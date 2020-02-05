@@ -34,7 +34,10 @@ class TeamList extends Component {
      }
     render() { 
         return ( 
-            <TeamTemplates data={this.state.leaders} />
+            <div className="scroll">
+                <TeamTemplates data={this.state.leaders} />
+            </div>
+            
          );
     }
 }

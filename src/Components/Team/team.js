@@ -49,7 +49,7 @@ const Team = props => {
             </div>
             <div className="col-md-6 col-sm-12  m-2">
               <div className="row">
-                <div className="col bg-white">
+                <div className="col bg-white " >
                   <h5 className="font-weight-bold font m-4 purple">
                     ADMINISTRATION
                   </h5>

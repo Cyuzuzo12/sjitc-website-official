@@ -5,7 +5,7 @@ const TeamTemplates = (props) => {
 
     const leaders = props.data.map( (leader) => {
       return (
-        <div key={leader.id} className="col-12 m-1"> 
+        <div key={leader.id} className="col-12 m-1" > 
         <Media tag="li" >
         <Media left middle>
        <Media object src={leader.image} alt={leader.designation} height="110"
@@ -17,7 +17,8 @@ const TeamTemplates = (props) => {
                     {leader.name}
                   </h5>
                   <p className=" font text-muted">{leader.designation}<br/>
-                  <em>Tel:{leader.tel}</em></p>
+                  {/* <em>Tel:{leader.tel}</em> */}
+                  </p>
                 </Media>
               </Media>
         </div>
